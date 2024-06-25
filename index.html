@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-black">
+    <header>
+        <div class="flex justify-center items-center bg-orange-800 h-12">
+            <h1 class="text-center text-stone-200 font-semibold">Calculator</h1>
+        </div>          
+    </header>
+    
+    <main>
+        <div class="flex flex-col min-h-screen">
+            <!-- screen -->
+            <div class="md:flex md:justify-center">
+                <div class="border border-stone-300 h-20 md:w-1/4 flex flex-col justify-end items-end overflow-hidden">
+                    <p class="text-slate-100 mb-1 pr-2" id="elements"></p>
+                    <p class="text-orange-800 pr-2" id="result">0</p>
+                </div>
+            </div>
+
+            <!-- buttons -->
+            <div class="flex flex-col justify-between flex-grow text-stone-200 md:px-96 mt-10 mb-14 md:mx-6">                
+                <div class="flex md:justify-between justify-around shrink md:px-24">
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200"><button class="my-button">7</button></div>
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200"><button class="my-button">8</button></div>
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200"><button class="my-button">9</button></div>
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center text-orange-800 hover:bg-orange-800 hover:text-slate-200"><button class="my-button" id="multiply">&#x00D7;</button></div>
+                </div>
+
+                <div class="flex md:justify-between justify-around shrink md:px-24">
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200"><button class="my-button">4</button></div>
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200"><button class="my-button">5</button></div>
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200"><button class="my-button">6</button></div>
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center text-orange-800 hover:bg-orange-800 hover:text-slate-200"><button class="my-button">-</button></div>
+                </div>
+
+                <div class="flex md:justify-between justify-around shrink md:px-24">
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200"><button class="my-button">1</button></div>
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200"><button class="my-button">2</button></div>
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200"><button class="my-button">3</button></div>
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center text-orange-800 hover:bg-orange-800 hover:text-slate-200"><button class="my-button">+</button></div>
+                </div>
+
+                <div class="flex md:justify-between justify-around shrink md:px-24">
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center bg-orange-800 hover:text-orange-800 hover:bg-black"><button class="my-button">=</button></div>
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200"><button class="my-button">0</button></div>
+                    <div class="border border-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200"><button class="my-button">.</button></div>
+                    <div class="border border-orange-800 text-orange-800 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200"><button class="my-button" id="division">&#x00F7;</button></div>
+                </div>
+
+                <div class="md:flex md:justify-center md:mx-10">
+                    <div class="border border-orange-800 h-10 md:w-3/4 flex justify-center items-center text-orange-800 hover:bg-orange-800 hover:text-slate-200">
+                        <button class="my-button">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </main>
+
+    <footer></footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
