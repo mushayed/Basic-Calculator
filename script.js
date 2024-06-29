@@ -1,4 +1,5 @@
 const buttons = document.querySelectorAll('.my-button')
+const btns = document.querySelectorAll('.my-btn')
 let temp = ""
 let num
 let output = 0
@@ -646,6 +647,21 @@ function clickButton(event) {
 
     displayContent(buttonText, elements, result, buttonId)
 }
+
+function clickBtn(event) {
+    const button = event.currentTarget.querySelector('button')
+    const buttonText = button.textContent
+    const buttonId = button.id
+
+    const elements = document.getElementById('elements')
+    const result = document.getElementById('result')
+
+    displayContent(buttonText, elements, result, buttonId)
+}
+
+btns.forEach((button) => {
+    button.addEventListener('click', clickBtn)
+})
 
 buttons.forEach((button) => {
     button.addEventListener('click', clickButton)
