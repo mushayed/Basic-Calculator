@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="favimg.jpg" type="image/x-icon">
     <title>Basic Calculator</title>
 </head>
 <body class="bg-black">
@@ -16,7 +15,7 @@
     </header>
     
     <main>
-        <div class="flex flex-col min-h-screen">
+        <div class="flex flex-col">
             <!-- screen -->
             <div class="md:flex md:justify-center">
                 <div class="border border-stone-300 h-20 md:w-1/4 flex flex-col justify-end items-end overflow-hidden">
@@ -26,7 +25,7 @@
             </div>
 
             <!-- buttons -->
-            <div class="flex flex-col justify-between flex-grow text-stone-200 md:px-96 mt-10 mb-14 md:mx-6">                
+            <div class="flex flex-col justify-between flex-grow md:gap-y-14 gap-y-8 text-stone-200 md:px-96 mt-10 mb-14 md:mx-6">                
                 <div class="flex md:justify-between justify-around shrink md:px-24">
                     <div class="my-button border border-orange-800 h-12 w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200 hover:cursor-pointer"><button>7</button></div>
                     <div class="my-button border border-orange-800 h-12 w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200 hover:cursor-pointer"><button>8</button></div>
@@ -53,18 +52,18 @@
                     <div class="my-button border border-orange-800 h-12 w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200 hover:cursor-pointer"><button>0</button></div>
                     <div class="my-button border border-orange-800 h-12 w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200 hover:cursor-pointer"><button>.</button></div>
                     <div class="my-btn border border-orange-800 text-orange-800 h-12 w-12 rounded-full flex items-center justify-center hover:bg-orange-800 hover:text-slate-200 hover:cursor-pointer"><button id="division">&#x00F7;</button></div>
-                </div>
-
-                <div class="md:flex md:justify-center md:mx-10">
-                    <div class="my-btn border border-orange-800 h-10 md:w-3/4 flex justify-center items-center text-orange-800 hover:bg-orange-800 hover:text-slate-200 hover:cursor-pointer">
-                        <button id="clr">Clear</button>
-                    </div>
-                </div>
+                </div>   
             </div>
         </div> 
     </main>
 
-    <footer></footer>
+    <footer class="md:w-4/5 md:m-auto">
+        <div class="md:flex md:justify-center md:mx-72">
+            <div class="my-btn border border-orange-800 h-10 md:w-3/4 flex justify-center items-center text-orange-800 hover:bg-orange-800 hover:text-slate-200 hover:cursor-pointer">
+                <button id="clr">Clear</button>
+            </div>
+        </div>
+    </footer>
     
 
     <script src="script.js"></script>
